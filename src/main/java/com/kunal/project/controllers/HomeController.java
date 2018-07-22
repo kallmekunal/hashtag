@@ -18,7 +18,6 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -28,18 +27,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.kunal.project.controller.domain.ExceptionJSONInfo;
-import com.kunal.project.controller.domain.User;
-import com.kunal.project.controller.domain.db.UserInfo;
-import com.kunal.project.controller.domain.exceptions.PersistenceException;
+import com.kunal.project.db.UserInfo;
+import com.kunal.project.domain.ExceptionJSONInfo;
+import com.kunal.project.domain.User;
+import com.kunal.project.exceptions.PersistenceException;
 import com.kunal.project.service.UserInfoService;
-import com.kunal.project.validators.UserInfoValidator;
 
 /**
  * Handles requests for the application home page.
  */
 @Controller
-//@RequestMapping("/project")
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);

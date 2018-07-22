@@ -1,9 +1,9 @@
-package com.kunal.project.service;
+package com.kunal.project.dao;
 import java.util.List;
 
 import com.kunal.project.db.UserInfo;
 
-public interface UserInfoService {
+public interface UserInfoDao {
  
  public void addUserInfo(UserInfo uerInfo);
 

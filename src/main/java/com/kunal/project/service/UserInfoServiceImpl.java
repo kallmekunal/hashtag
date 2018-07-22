@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.kunal.project.controller.domain.dao.UserInfoDao;
-import com.kunal.project.controller.domain.db.UserInfo;
+import com.kunal.project.dao.UserInfoDao;
+import com.kunal.project.db.UserInfo;
 
 @Service
 public class UserInfoServiceImpl implements UserInfoService {

@@ -4,7 +4,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import com.kunal.project.controller.domain.User;
+import com.kunal.project.domain.User;
 
 public class UserInfoValidator implements Validator{
 
